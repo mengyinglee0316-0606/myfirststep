@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chris's First Step</title>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f6f7fb;
+        color: #1f2933;
+      }
+      header {
+        background: linear-gradient(120deg, #1d3557, #457b9d);
+        color: #fff;
+        padding: 48px 24px;
+        text-align: center;
+      }
+      main {
+        max-width: 960px;
+        margin: -32px auto 48px;
+        background: #fff;
+        padding: 32px;
+        border-radius: 16px;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+      }
+      h1 {
+        margin: 0 0 12px;
+        font-size: 2.4rem;
+      }
+      p {
+        margin: 0 0 24px;
+        line-height: 1.7;
+      }
+      .album-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 16px;
+      }
+      .album-card {
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 20px;
+        background: #f8fafc;
+        text-decoration: none;
+        color: inherit;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .album-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(15, 23, 42, 0.15);
+      }
+      .album-card span {
+        display: block;
+        font-size: 0.9rem;
+        color: #64748b;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Chris's First Step</h1>
+      <p>精選相簿與回憶，從這裡開始探索。</p>
+    </header>
+    <main>
+      <h2>我的相簿</h2>
+      <p>點選下方相簿連結，瀏覽整理好的照片集。</p>
+      <div class="album-list">
+        <a class="album-card" href="albums/sakura-night.html">
+          <strong>櫻花樹下的夜間風情</strong>
+          <span>54 張照片</span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
