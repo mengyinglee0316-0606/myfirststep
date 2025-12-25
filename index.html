@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的相簿</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", system-ui, sans-serif;
+      margin: 0;
+      padding: 32px;
+      background: #0b0b10;
+      color: #f5f5f5;
+    }
+    h1 {
+      margin-bottom: 16px;
+      font-size: 30px;
+    }
+    .albums {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      max-width: 900px;
+    }
+    .album {
+      text-decoration: none;
+      color: inherit;
+      border: 1px solid #232335;
+      border-radius: 16px;
+      padding: 16px;
+      background: #15151f;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .album:hover {
+      transform: translateY(-2px);
+      border-color: #8a8ad9;
+    }
+    .album-title {
+      font-size: 18px;
+      margin: 0 0 6px;
+    }
+    .album-meta {
+      margin: 0;
+      color: #c7c7d1;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>我的相簿</h1>
+  <section class="albums">
+    <a class="album" href="albums/櫻花樹下的夜間風情/index.html">
+      <h2 class="album-title">櫻花樹下的夜間風情</h2>
+      <p class="album-meta">54 張照片</p>
+    </a>
+  </section>
+</body>
+</html>
