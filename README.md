@@ -2,4 +2,4 @@
 
 ## 相簿
 
-- [相簿列表](albums/index.html)
+- [相簿列表](docs/albums/index.html)
