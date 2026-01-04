@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
-<body class="is-boxed has-animations">
+<body class="is-boxed has-animations" id="top">
     <div class="body-wrap boxed-container">
         <header class="site-header">
             <div class="container">
@@ -54,7 +54,7 @@
                         <p class="hero-paragraph is-revealing">精選相簿與回憶，從這裡開始探索我的第一步旅程。</p>
                         <div class="hero-form newsletter-form field field-grouped is-revealing">
                             <div class="control">
-                                <a class="button button-primary button-block button-shadow" href="#albums">立即瀏覽相簿</a>
+                                <a class="button button-primary button-block button-shadow" href="#album-links">立即瀏覽相簿</a>
                             </div>
                         </div>
                         <div class="hero-browser">
@@ -170,11 +170,9 @@
                 </div>
             </section>
 
-            <section class="features section text-center" id="albums">
+            <section class="features section text-center">
                 <div class="container">
                     <div class="features-inner section-inner has-bottom-divider">
-                        <h2 class="section-title mt-0">我的相簿</h2>
-                        <p class="section-paragraph">三個主題相簿一次看，點擊卡片進入完整照片集。</p>
                         <div class="features-wrap">
                             <div class="feature is-revealing">
                                 <div class="feature-inner">
@@ -188,9 +186,9 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <h3 class="feature-title">櫻花樹下的夜間風情</h3>
-                                    <p class="text-sm">54 張照片，夜色與粉櫻交織的浪漫瞬間。</p>
-                                    <a class="button button-primary button-shadow" href="albums/sakura-night.html">進入相簿</a>
+                                    <h3 class="feature-title">我的相簿</h3>
+                                    <p class="text-sm">收藏三本相簿的入口。</p>
+                                    <a class="button button-primary button-shadow" href="#album-links">查看相簿</a>
                                 </div>
                             </div>
                             <div class="feature is-revealing">
@@ -203,9 +201,8 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <h3 class="feature-title">行星影像集</h3>
-                                    <p class="text-sm">6 張照片，收錄最清晰的行星影像。</p>
-                                    <a class="button button-primary button-shadow" href="albums/planets.html">進入相簿</a>
+                                    <h3 class="feature-title">我的文章</h3>
+                                    <p class="text-sm"></p>
                                 </div>
                             </div>
                             <div class="feature is-revealing">
@@ -219,11 +216,27 @@
                                             </g>
                                         </svg>
                                     </div>
-                                    <h3 class="feature-title">非行星天體</h3>
-                                    <p class="text-sm">6 張照片，記錄星雲與深空的迷人細節。</p>
-                                    <a class="button button-primary button-shadow" href="albums/non-planets.html">進入相簿</a>
+                                    <h3 class="feature-title">我的靈感</h3>
+                                    <p class="text-sm"></p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text-center" id="album-links">
+                <div class="container-sm">
+                    <div class="section-inner">
+                        <h2 class="section-title mt-0">我的相簿</h2>
+                        <p class="section-paragraph">點選相簿進入照片集，或回到首頁。</p>
+                        <div class="button-group">
+                            <a class="button button-primary button-shadow" href="albums/sakura-night.html">櫻花樹下的夜間風情</a>
+                            <a class="button button-primary button-shadow" href="albums/planets.html">行星影像集</a>
+                            <a class="button button-primary button-shadow" href="albums/non-planets.html">非行星天體</a>
+                        </div>
+                        <div class="button-group" style="margin-top: 16px;">
+                            <a class="button button-primary button-shadow" href="#top">回到首頁</a>
                         </div>
                     </div>
                 </div>
@@ -233,12 +246,15 @@
                 <div class="container-sm">
                     <div class="newsletter-inner section-inner">
                         <div class="newsletter-header text-center is-revealing">
-                            <h2 class="section-title mt-0">更多回憶即將上線</h2>
-                            <p class="section-paragraph">透過 GitHub Pages 在任何裝置直接瀏覽，後續也會持續新增更多相簿。</p>
+                            <h2 class="section-title mt-0">Stay in the know</h2>
+                            <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation</p>
                         </div>
                         <div class="footer-form newsletter-form field field-grouped is-revealing">
+                            <div class="control control-expanded">
+                                <input class="input" type="email" name="email" placeholder="Your best email&hellip;">
+                            </div>
                             <div class="control">
-                                <a class="button button-primary button-block button-shadow" href="#albums">回到相簿列表</a>
+                                <a class="button button-primary button-block button-shadow" href="#">Get early access</a>
                             </div>
                         </div>
                     </div>
@@ -273,16 +289,16 @@
                     </div>
                     <ul class="footer-links list-reset">
                         <li>
-                            <a href="#albums">相簿列表</a>
+                            <a href="#">Contact</a>
                         </li>
                         <li>
-                            <a href="albums/sakura-night.html">櫻花夜景</a>
+                            <a href="#">About us</a>
                         </li>
                         <li>
-                            <a href="albums/planets.html">行星影像</a>
+                            <a href="#">FAQ's</a>
                         </li>
                         <li>
-                            <a href="albums/non-planets.html">非行星天體</a>
+                            <a href="#">Support</a>
                         </li>
                     </ul>
                     <ul class="footer-social-links list-reset">
