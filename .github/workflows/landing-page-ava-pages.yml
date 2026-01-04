@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "Landing_Page_ava/**"
+      - "**"
       - ".github/workflows/landing-page-ava-pages.yml"
   workflow_dispatch:
 
@@ -34,7 +34,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Landing_Page_ava
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
